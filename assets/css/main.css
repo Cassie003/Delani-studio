@@ -168,5 +168,29 @@ body {
     color: #fff;
     /* height: 95vh; */
   }
-  
+  .form-control,
+.form-control:focus,
+.form-control:active {
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  color: white !important;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+#name-error,
+#email-error,
+#message-error {
+  font-size: 13px;
+}
+
+.btn {
+  color: white;
+  border: 1px solid white;
+}
+.icons img {
+  margin-right: 10px;
+}
+
      
