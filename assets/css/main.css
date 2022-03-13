@@ -195,5 +195,14 @@ body {
 footer {
     text-transform: uppercase;
   }
+  /* media queries */
+@media (max-width: 768px) {
+    .intro h1 {
+      font-size: 2em;
+    }
+    .mouse_click {
+      padding-top: 80px;
+    }
+  }
   
      
