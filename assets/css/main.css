@@ -6,3 +6,12 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+.danger {
+    font-size: 15px;
+    display: none;
+  }
+  
+  .success {
+    display: none;
+  }
+  
