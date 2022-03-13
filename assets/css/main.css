@@ -40,4 +40,9 @@ body {
   .mouse_click {
     padding-top: 100px;
   }
-   
+ /* about us */
+.about_us h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+    
