@@ -192,5 +192,8 @@ body {
 .icons img {
   margin-right: 10px;
 }
-
+footer {
+    text-transform: uppercase;
+  }
+  
      
