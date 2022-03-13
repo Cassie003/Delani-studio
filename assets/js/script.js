@@ -132,3 +132,30 @@ $(document).ready(function () {
             $(".pn8").removeClass("portfolio-hover-effect");
         }
     );
+    // contact us
+    $("#contact-form form").submit(function (e) {
+        e.preventDefault();
+
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var message = $("#message").val();
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+        // Check for empty fields
+        if (name == '' || email == '' || message == '') {
+            $("#name-error").html("<p class='text-danger'>Please fill in you name.</p>");
+            $("#email-error").html("<p class='text-danger'>Please fill in your valid email.</p>");
+            $("#message-error").html("<p class='text-danger'>Please fill in the field.</p>");
+        } else if (email == '' || !emailReg.test(email)) {
+            $("#email-error").html("<p class='text-danger'>Please enter a valid email address.</p>");
+        } else {
+            $("#name-error").html("");
+            $("#email-error").html("");
+            $("#message-error").html("");
+            $(".alert-success").text(`${name} we have received your message. Thank you for reaching out to us.`)
+            $(".alert-success").show();
+        }
+
+
+    });
+});
