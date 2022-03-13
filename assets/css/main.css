@@ -14,4 +14,30 @@ body {
   .success {
     display: none;
   }
+ /* homepage */
+
+.homepage {
+    background-image: url("../img/bg/h_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    color: #fff;
+  }
   
+  .intro {
+    padding-top: 8em;
+    text-transform: uppercase;
+  }
+  
+  .intro h1 {
+    font-size: 3em;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.1em;
+  }
+  
+  .mouse_click {
+    padding-top: 100px;
+  }
+   
